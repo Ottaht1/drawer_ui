@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.5px;
+}
+
+.dashboard {
+  width: 100%;
+  height: 100vh;
+  background-color: #111828;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.dashboard button {
+  background-color: #e3e3e3;
+  color: #444;
+  padding: 0.85rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 40rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.drawer {
+  width: 28%;
+  background-color: #1e2938;
+  color: #f3f4f6;
+  min-width: 20rem;
+  max-width: 36rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: -8px 0 24px rgba(0, 0, 0, 0.05);
+}
+
+/* ---------- Top Drawer Header ---------- */
+.blue-container {
+  background: #3829ab;
+  color: #f3f4f6;
+  padding: 1.5rem;
+}
+
+.new-project-and-close-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-project-and-close-container h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.new-project-and-close-container .material-symbols-outlined {
+  cursor: pointer;
+}
+
+.get-started-container p {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* ---------- Input Groups ---------- */
+.input-groups-container {
+  padding: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.input-group input,
+.input-group textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* ---------- Teams Section ---------- */
+.teams-and-privacy-container {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.teams-title-container p {
+  font-weight: 600;
+}
+
+/* ---------- Avatars Styling ---------- */
+.avatars-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  align-items: center;
+}
+
+.avatar img,
+.avatar-icon img {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px #ddd;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.avatar img:hover,
+.avatar-icon img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 0 2px #4f46e5;
+}
+
+/* Special styling for avatar-icon (the “+” or last one) */
+.avatar-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: #4f46e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px #ddd;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.avatar-icon:hover {
+  background: #4338ca;
+  transform: scale(1.08);
+}
+
+/* ---------- Privacy Section ---------- */
+.privacy-container {
+  margin-top: 1.5rem;
+}
+
+.privacy-title p {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.radio-input-group {
+  margin-bottom: 1rem;
+}
+
+.radio-input-group label {
+  font-weight: 600;
+  margin-left: 0.25rem;
+}
+
+.radio-input-group p {
+  font-size: 0.85rem;
+  margin-left: 1.5rem;
+  color: #555;
+}
+
+/* ---------- Share Section ---------- */
+.share-container {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.copy-link-container,
+.learn-more-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.copy-link-container span,
+.learn-more-container span {
+  font-size: 1rem;
+  color: #4f46e5;
+}
+
+.copy-link-container a {
+  text-decoration: none;
+  color: #4f46e5;
+  font-weight: 500;
+}
+
+/* ---------- Bottom Buttons ---------- */
+.bottom-drawer-container {
+  border-top: 1px solid #eee;
+  padding: 1rem 1.5rem;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.buttons-container button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.buttons-container button:first-child {
+  background: #f3f4f6;
+  color: #444;
+}
+
+.buttons-container button:last-child {
+  background: #4f46e5;
+  color: white;
+}
